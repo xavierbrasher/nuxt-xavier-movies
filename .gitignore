@@ -88,3 +88,10 @@ sw.*
 
 # Vim swap files
 *.swp
+
+.env
+.env.development
+.env.production
+*.env
+.env.*
+*.env.*
