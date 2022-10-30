@@ -1,8 +1,8 @@
 <template>
     <div>
-        <button class="rounded bg-slate-200 px-1" @click="() => count++">
-            Add 1 to count: {{ count }}
-        </button>
+        <h3 class="text-xl">Count: {{ count }}</h3>
+        <button class="btn" @click="() => count++">Add 1 to count</button>
+        <button class="btn" @click="() => count--">Remove 1 to count</button>
     </div>
 </template>
 <script>

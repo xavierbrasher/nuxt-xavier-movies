@@ -1,11 +1,12 @@
-<template lang="en">
-<div class="mx-36">
-  <h1 class="text-3xl font-bold mb-2">Learning Vue</h1>
-  <h2 class="text-2xl">Handling Clicks And State</h2>	
-  <CountButton class="mb-2"/>
-  <h2 class="text-2xl" >Handling Input</h2>	
-  <Language />
-</div>
+<template>
+    <div class="mx-36">
+        <h1 class="text-3xl font-bold mb-2">Learning Vue</h1>
+        <h2 class="text-2xl">Handling Clicks And State</h2>
+        <CountButton class="mb-2" />
+        <h2 class="text-2xl">Handling Input</h2>
+        <Language />
+        <Language />
+    </div>
 </template>
 
 <script>
@@ -18,9 +19,8 @@ export default Vue.extend({
         Language,
         CountButton,
     },
-    data() {
-        return {};
+    head: {
+        title: "XMOVIES Home",
     },
-    name: "IndexPge",
 });
 </script>

@@ -1,18 +1,13 @@
 <template>
     <div>
-        <input
-            v-if="!nameInputed"
-            class="pl-1 mt-1 bg-slate-200 border-2 rounded-sm border-slate-300 w-28"
-            v-model="newName"
-            placeholder="Your Name"
-        />
-        <button
-            @click="submitName"
-            class="px-1 ml-1 border-2 rounded-xl bg-slate-200"
-            v-if="!nameInputed"
-        >
-            Submit
-        </button>
+        <form v-if="!nameInputed" @submit="submitName">
+            <input
+                class="input input-bordered w-full max-w-xs"
+                v-model="newName"
+                placeholder="Your Name"
+            />
+            <button type="submit" class="btn">Submit</button>
+        </form>
         <h1>
             Hello, your name is
             {{ name || "... wait you forgot what's your name" }}
